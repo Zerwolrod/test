@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>性能测试</title>
+</head>
+<body>
+    <button onclick="init_editor()" style="width: 100px; height: 50px; margin: 10px;"> 清空内容</button>
+    <button onclick="display(0)" style="width: 100px; height: 50px; margin: 10px;"> 短+纯文本</button>
+    <button onclick="display(1)" style="width: 100px; height: 50px; margin: 10px;"> 短+复杂文本</button>
+    <button onclick="display(2)" style="width: 100px; height: 50px; margin: 10px;"> 中+纯文本</button>
+    <button onclick="display(3)" style="width: 100px; height: 50px; margin: 10px;"> 中+复杂文本</button>
+    <button onclick="display(4)" style="width: 100px; height: 50px; margin: 10px;"> 长+纯文本</button>
+    <button onclick="display(5)" style="width: 100px; height: 50px; margin: 10px;"> 长+复杂文本</button>
+    <br>
+    <button onclick="edit()" style="width: 100px; height: 50px; margin: 10px;"> 模拟编辑 </button>
+
+    <div style="width: 100px; height: 50px; margin: 10px;">
+        <b>用时：</b><b id="cost_time"></b>
+    </div>
+    <div id="markdown-container">
+
+    </div>
+</body>
+
+</html>
